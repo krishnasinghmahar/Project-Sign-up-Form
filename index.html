@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Sign-up Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div>
+        <h2>THE ODIN PROJECT</h2>
+        <img src="img/odin-lined.png" alt="odin">
+    </div>
+    <div>
+        <form action="">
+            <h2>Get started</h2>
+            <div class="name group">
+                <div class="form-group">
+                    <label for="first-name">FIRST NAME*</label>
+                    <input type="text" id="first-name" name="first_name" placeholder="John" maxlength="20" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" name="last_name" maxlength="20" placeholder="Doe">
+                </div>
+            </div>
+            <div class="contact group">
+                <div class="form-group">
+                    <label for="email">EMAIL*</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input type="tel" id="phone-number" name="phone_number" placeholder="000-000-0000">
+                </div>
+            </div>
+            <div class="pwd group">
+                <div class="form-group">
+                    <label for="pwd">PASSWORD*</label>
+                    <input type="password" id="pwd" name="pwd" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-pwd">CONFIRM PASSWORD*</label>
+                    <input type="password" id="confirm-pwd" name="confirm_pwd" required>
+                </div>
+            </div>
+            <button type="submit">Create Account</button>
+            <p>Already have an account?<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Log in</a></p>
+        </form>
+    </div>
+</body>
+
+</html>
