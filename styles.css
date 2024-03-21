@@ -16,6 +16,17 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    font-family: var(--font-family);
+    color: var(--color);
+    font-weight: 500;
+}
+
 h2 {
     margin-bottom: 30px;
     text-align: center;
@@ -25,22 +36,7 @@ h2 {
 div>h2 {
     font-family: 'Norse-Bold', Arial, sans-serif;
     font-size: 48px;
-}
 
-form h2{
-    margin-bottom: 56px;
-    font-size: 48px;
-}
-
-body {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
-    background-color: rgb(0, 0, 0);
-    font-family: var(--font-family);
-    color: var(--color);
-    font-weight: 500;
 }
 
 .form-group {
@@ -52,12 +48,12 @@ body {
     font-size: 1.1rem;
     font-weight: 900;
     font-style: oblique;
+    margin-top: 30px;
 }
 
 .form-group input {
     width: 100%;
     margin-top: 2px;
-    margin-bottom: 50px;
     border: 1px solid rgba(255, 255, 255, 0.5);
     color: #fff;
     background: rgba(255, 255, 255, 0.1);
@@ -96,6 +92,7 @@ button {
     transition: background-color 0.3s ease;
     margin-bottom: 5px;
     font-size: 1.1rem;
+    margin-top: 30px;
 }
 
 button:hover {
@@ -105,10 +102,9 @@ button:hover {
 
 .form-group input:focus {
     border-color: #00bfff;
-    box-shadow: 0 0 2px 2px rgba(0, 191, 255, 0.5);
     background-color: rgba(255, 255, 255, 0);
     color: #fff;
-    border-color: #007bff;
+    border: 2px solid #007bff;
     outline: none;
 }
 
@@ -116,4 +112,24 @@ button:hover {
     color: #d0d0d0;
     font-style: italic;
     font-size: 14px;
+}
+
+.form-group.success input {
+    border-color: #09c372;
+    background-color: rgba(0, 255, 0, 0.198);
+}
+
+.form-group.error input {
+    border-color: red;
+    background-color: rgba(255, 0, 0, 0.208);
+}
+
+.form-group .error {
+    color: red;
+    font-size: 16px;
+    height: 13px;
+}
+
+a{
+    color: darkblue;
 }

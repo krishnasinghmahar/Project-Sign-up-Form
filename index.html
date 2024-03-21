@@ -15,40 +15,61 @@
         <img src="img/odin-lined.png" alt="odin">
     </div>
     <div>
-        <form action="">
-            <h2>Get started</h2>
+        <form id="form" action="">
+
+            <h2>Create Account</h2>
+
             <div class="name group">
+
                 <div class="form-group">
                     <label for="first-name">FIRST NAME*</label>
-                    <input type="text" id="first-name" name="first_name" placeholder="John" maxlength="20" required>
+                    <input type="text" id="first-name" name="first_name" placeholder="John">
+                    <div class="error"></div>
                 </div>
+
                 <div class="form-group">
                     <label for="last-name">LAST NAME</label>
-                    <input type="text" id="last-name" name="last_name" maxlength="20" placeholder="Doe">
+                    <input type="text" id="last-name" name="last_name" placeholder="Doe">
+                    <div class="error"></div>
                 </div>
+
             </div>
+
             <div class="contact group">
+
                 <div class="form-group">
                     <label for="email">EMAIL*</label>
-                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    <input type="email" id="email" name="email" placeholder="john@example.com">
+                    <div class="error"></div>
                 </div>
+
                 <div class="form-group">
                     <label for="phone-number">PHONE NUMBER</label>
                     <input type="tel" id="phone-number" name="phone_number" placeholder="000-000-0000">
+                    <div class="error"></div>
                 </div>
+
             </div>
+
             <div class="pwd group">
+
                 <div class="form-group">
                     <label for="pwd">PASSWORD*</label>
-                    <input type="password" id="pwd" name="pwd" required>
+                    <input type="password" id="pwd" name="pwd">
+                    <div class="error"></div>
                 </div>
+
                 <div class="form-group">
                     <label for="confirm-pwd">CONFIRM PASSWORD*</label>
-                    <input type="password" id="confirm-pwd" name="confirm_pwd" required>
+                    <input type="password" id="confirm-pwd" name="confirm_pwd">
+                    <div class="error"></div>
                 </div>
+
             </div>
+
             <button type="submit">Create Account</button>
-            <p>Already have an account?<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Log in</a></p>
+            <p>Already have an account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> LOG IN</a></p>
+
         </form>
     </div>
 </body>
